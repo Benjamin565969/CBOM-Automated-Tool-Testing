@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: IBM-QSE-echo-hook
+        name: IBM Quantum Safe Explorer Code Scanner Echo Hook
+        entry: bash run_my_script.sh
+        language: script
+        files: \.(py|cpp|cs|c|java|go|jar|dart)$
